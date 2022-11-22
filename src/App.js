@@ -1,7 +1,6 @@
 import './App.css';
 import Home from './pages/Home';
 import Framework from './pages/Framework';
-import NavBar from './components/NavBar';
 import {
   BrowserRouter as Router,
   Route,
@@ -12,7 +11,6 @@ function App() {
   return (
     <>
     <div className = 'pages'>
-      <NavBar />
       <Router>
         <Routes>
           <Route exact path="/" element={<Home />}>
