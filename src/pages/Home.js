@@ -7,22 +7,26 @@ import WorldImage from '../assets/world2.png'
 import Typewriter from 'typewriter-effect/dist/core';
 
 const Home = () => {
+
+  const typewriterStrings = ["Intersectionality",
+    "Deep Investigation",
+    "Environmental Justice",
+    "Challenging Overproduction & Overconsumption",
+    "Conscious Consumer Culture",
+    "Increasing Transparency",
+    "Social Impact",
+    "Feasibility",
+    "Systems Thinkings"
+  ]
+
   useEffect(()=> {
-    var app = document.getElementById('changingText');
-    var customNodeCreator = function(character) {
-      return document.createTextNode(character);
-    }
-  
-    var typewriter = new Typewriter(app, {
-      loop: true,
-      delay: 75,
-      onCreateTextNode: customNodeCreator,
+    new Typewriter('#changingText', {
+      strings: typewriterStrings,
+      autoStart: true,
+      loop:true,
+      
+      deleteSpeed:7,
     });
-  
-    typewriter
-      .typeString('Social impact')
-      .pauseFor(300)
-      .start();
   }, [])
 
   return (
@@ -31,15 +35,14 @@ const Home = () => {
     <NavBar />
     
     <div className="homeBody">
-        <h1 className="header"> Raising the Standard of Sustainable Solutions With</h1>
-        <h1 className="header2"> <span id="changingText">Fair Labor Practices</span> </h1>
+        <div className="header headers"> Raising the Standard of Sustainable Solutions With</div>
+        <div className="header2 headers"> <span id="changingText">Fair Labor Practices</span> </div>
         <img src={WorldImage} />
         <p>A group of university researchers committed to addressing sustainability and
             climate change from the root in order to inform holistic solutions</p>
     </div>
     <Waves />
     <Footer/>
-    
     </>
   )
 }

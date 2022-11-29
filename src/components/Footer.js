@@ -12,7 +12,7 @@ const Footer = () => {
                 <div className = 'footer-item'>Email</div>
                 </div>
             <div className = 'FooterContainer'>
-                <div className = 'footer-item'>Surge</div>
+                <div className = 'footer-item'>SURG</div>
                 
             </div>
         </div>

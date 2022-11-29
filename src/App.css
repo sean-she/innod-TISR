@@ -6,6 +6,8 @@
 
 body {
   background-color: #F5F2EE;
+  width: 100vw;
+  height: auto;
 }
 
 .pages {

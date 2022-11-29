@@ -23,14 +23,20 @@ font-family: 'Montserrat', sans-serif;
 
 .header {
     text-align: center;
+    padding-top: 20px;
     width: 70%;
 }
 .header2 {
+    padding-top:20px;
     text-align:center;
     padding:0;
-    margin-top: -0.5em;
 }
-
+.headers {
+    font-size: 39px;
+    font-weight:bold;
+    font-family: 'Montserrat', sans-serif;
+    width:90%;
+}
 
 #changingText {
     color: #7CB9C5;
