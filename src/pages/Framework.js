@@ -3,7 +3,7 @@ import NavBar from '../components/NavBar'
 import Waves from '../components/Waves'
 import Footer from '../components/Footer'
 import "./Framework.css"
-import FrameworkImg from "../assets/frameworkimg.svg"
+// import FrameworkImg from "../assets/frameworkimg.svg"
 
 const Framework = () => {
   return (

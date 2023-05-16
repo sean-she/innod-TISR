@@ -8,20 +8,18 @@ import Typewriter from 'typewriter-effect/dist/core';
 
 const Home = () => {
 
-  const typewriterStrings = ["Intersectionality",
-    "Deep Investigation",
-    "Environmental Justice",
-    "Challenging Overproduction & Overconsumption",
-    "Conscious Consumer Culture",
-    "Increasing Transparency",
-    "Social Impact",
-    "Feasibility",
-    "Systems Thinkings"
-  ]
-
   useEffect(()=> {
     new Typewriter('#changingText', {
-      strings: typewriterStrings,
+      strings:
+        ["Intersectionality",
+          "Deep Investigation",
+          "Environmental Justice",
+          "Challenging Overproduction & Overconsumption",
+          "Conscious Consumer Culture",
+          "Increasing Transparency",
+          "Social Impact",
+          "Feasibility",
+          "Systems Thinkings"],
       autoStart: true,
       loop:true,
       
@@ -37,9 +35,8 @@ const Home = () => {
     <div className="homeBody">
         <div className="header headers"> Raising the Standard of Sustainable Solutions With</div>
         <div className="header2 headers"> <span id="changingText">Fair Labor Practices</span> </div>
-        <img src={WorldImage} />
-        <p>A group of university researchers committed to addressing sustainability and
-            climate change from the root in order to inform holistic solutions</p>
+        <img src={WorldImage} alt='Globe'/>
+        <p>A group of university researchers committed to addressing sustainability and climate change from the root in order to inform holistic solutions</p>
     </div>
     <Waves />
     <Footer/>
