@@ -9,7 +9,7 @@ const Framework = () => {
   return (
     <>
     <NavBar />
-    <img className="framework-img" src={FrameworkImg} />
+    {/* <img className="framework-img" src={FrameworkImg} /> */}
     <div className="framework-container">
         <h1 className="framework-header">Our Framework</h1>
         <div>
